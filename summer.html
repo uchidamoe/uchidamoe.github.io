@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>夏休みの思い出</title>
+</head>
+<body>
+ 
+<script  src="https://code.jquery.com/jquery-2.2.4.min.js"></script>   
+<p>夏休みは大学の友達と3人で初めてハワイアンズに行きました。2枚目はK-POPアイドルのライブに行ったときの写真です。</p>
+<img src="image1.jpeg" id="img">
+    
+<script>
+    
+$(function(){
+  $("#img").click(function(){
+    $(this).attr('src', 'image1.jpeg');
+  },
+  function(){
+    $(this).attr('src', 'image2.jpeg');
+  });
+    $("#img").width(1000).height(800);
+});
+        
+</script> 
+</body>
+</html>
